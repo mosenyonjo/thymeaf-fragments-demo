@@ -1,0 +1,186 @@
+/* Apply some basic styling to the body and heading */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c8b7a6;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #703f37;
+}
+
+/* Style the header */
+header {
+    background-color: #7d94b5;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the navigation bar: */
+nav.navbar {
+    background-color: #c8b7a6; /* Beige */
+    padding: 0;
+}
+
+/* Set the navbar brand's color and font size: */
+nav.navbar .navbar-brand {
+    color: #703f37; /* Maroon Brown */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Set the color and font size of the navbar links: */
+nav.navbar .nav-link {
+    color: #7d94b5; /* Periwinkle */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Add hover and active states for the navbar links: */
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link:focus,
+nav.navbar .nav-link.active {
+    color: #c29591; /* Dusty Rose */
+}
+
+/* Change the position and size of the toggler icon: */
+nav.navbar .navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: 20px;
+    padding: 8px 10px;
+    border: none;
+    background-color: #7d94b5; /* Periwinkle */
+    border-radius: 4px;
+}
+
+nav.navbar .navbar-toggler:focus,
+nav.navbar .navbar-toggler:hover {
+    background-color: #c29591; /* Dusty Rose */
+}
+
+nav.navbar .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/*Style the sidebar:*/
+aside#sidebar {
+    width: 250px;
+    margin-right: 20px;
+    background-color: #c29591;
+    color: #fff;
+    padding: 20px;
+}
+
+aside#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+aside#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside#sidebar ul li a:hover {
+    color: #b6c199;
+}
+
+/*Style the section and article:*/
+section {
+    margin-bottom: 40px;
+    clear: both;
+}
+
+article {
+    margin-bottom: 20px;
+    float: right;
+    width: 70%;
+    background-color: #b6c199;
+    color: #fff;
+    padding: 20px;
+}
+
+article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+article p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #703f37;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Add some responsive styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+
+    article {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
+
+
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #703f37;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-image {
+    margin-top: 20px;
+}
+
+.article-img {
+    width: 35%;
+    border: 5px solid #c8b7a6;
+}
+
+.article-caption {
+    font-size: 16px;
+    color: #7d94b5;
+    text-align: center;
+    margin-top: 5px;
+}
